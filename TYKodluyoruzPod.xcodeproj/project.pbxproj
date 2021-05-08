@@ -16,6 +16,7 @@
 		71C15DAD26469152007E341E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C15DAB26469152007E341E /* Main.storyboard */; };
 		71C15DAF26469154007E341E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C15DAE26469154007E341E /* Assets.xcassets */; };
 		71C15DB226469154007E341E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C15DB026469154007E341E /* LaunchScreen.storyboard */; };
+		71C15DBB26469266007E341E /* TYKodluyoruzPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C15DBA26469266007E341E /* TYKodluyoruzPod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		71C15DAE26469154007E341E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71C15DB126469154007E341E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71C15DB326469154007E341E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71C15DBA26469266007E341E /* TYKodluyoruzPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYKodluyoruzPod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				71C15D86264690F9007E341E /* TYKodluyoruzPod.h */,
 				71C15D87264690F9007E341E /* Info.plist */,
+				71C15DBA26469266007E341E /* TYKodluyoruzPod.swift */,
 			);
 			path = TYKodluyoruzPod;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					71C15D82264690F9007E341E = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					71C15D8B264690F9007E341E = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C15DBB26469266007E341E /* TYKodluyoruzPod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		71C15D98264690F9007E341E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M2ZVLTD873;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kerimcaglar.TYKodluyoruzPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		71C15D99264690F9007E341E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M2ZVLTD873;
@@ -486,6 +494,7 @@
 		71C15D9B264690F9007E341E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2ZVLTD873;
 				INFOPLIST_FILE = TYKodluyoruzPodTests/Info.plist;
@@ -504,6 +513,7 @@
 		71C15D9C264690F9007E341E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2ZVLTD873;
 				INFOPLIST_FILE = TYKodluyoruzPodTests/Info.plist;
