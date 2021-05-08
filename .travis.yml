@@ -1,10 +1,6 @@
-language: swift
+language: objective-c
+osx_image: xcode12.5
+xcode_workspace: TYKodluyoruzPod.xcworkspace
+xcode_scheme: TYKodluyoruzPod
+xcode_destination: platform=iOS Simulator,OS=14.5,name=iPhone X
 
-osx_image: xcode12.3
-
-env:
-  matrix:
-    - TEST_SDK = iphpssimulator14.4 OS=14.4 NAME ='iPhone 11'
-
-script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project TYKodluyoruzPod.xcworkspace -scheme TYKodluyoruzPod - sdk $TEST_SDK -destination "iOS Simulator, OS=$OS, name= $NAME" ONLY_ACTIVE_ARCH = YES 
